@@ -203,3 +203,16 @@ a{
 .card-body{
     text-align: center;
 }
+.contact{
+    display: flex;
+    background-color: rgb(0, 0, 0,0.5);
+    margin-top:5%;
+}
+.contactdetails,.openinghours{
+    flex-direction: row;
+    color:white;
+    margin:5%;
+}
+iframe{
+    margin-top:10%;
+}
