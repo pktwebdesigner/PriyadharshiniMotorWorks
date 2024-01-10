@@ -38,7 +38,7 @@ header {
     position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
     background-color: black;
 }
@@ -50,6 +50,7 @@ nav{
     display: flex;
     justify-content: right;
     box-shadow: 5px 5px 5px rgb(0, 0, 0,0.5);
+    margin-right: 5%;
 }
 
 ul{
@@ -66,11 +67,13 @@ a{
     color:#F4A12B;
     width:auto;
     text-wrap: none;
+    font-size: 1em;
 }
 .banner{
     display: flex;
     background-image: url(img/banner.png);
     text-align: center;
+    width:100vw;
 }
 .banner p{
     width:60vw;
@@ -97,7 +100,6 @@ a{
     align-items: center;
     text-align: center;
     width:70vw;
-    height:50vh;
     margin-left: 10%;
 }
 
@@ -215,4 +217,35 @@ a{
 }
 iframe{
     margin-top:10%;
+}
+
+/*Mobile View*/
+@media screen and (max-width:1062px){
+
+    .banner p{
+        font-size: 1em;
+    }
+    .banner img{
+        width:50vw;
+        height:25vh;
+    }
+    .section1 p,.section2 p{
+        font-size: 0.70em;
+        width:70vw;
+    }
+    a{
+        font-size: 2vw;
+    }
+    .card{
+        width:75vw;
+        margin-left: 10%;
+    }
+    .contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    iframe{
+        width:75%;
+    }
 }
