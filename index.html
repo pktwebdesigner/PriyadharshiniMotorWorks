@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     </head>
     <body>
         <header>
@@ -28,9 +29,9 @@
                 <div>
                     <ul>
                         <li><a href=#about>About</a></li>
-                        <li><a href="services">Services</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="blog.html">Blogs</a></li>
-                        <li><a href="https://forms.gle/96ffonya4m6JgybA9">Make a Appoinment</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc5CJFFNboi5kOhqJvfTy9cyPVk4Iw21XenLuxuB0on8dGudQ/viewform">Make a Appoinment</a></li>
                         <li><a href=#contact>Contact Us</a></li>
                     </ul>
                 </div>
@@ -185,7 +186,7 @@
                 </p>
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15695.872000783118!2d79.3091683!3d10.424114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0001becd96cb03%3A0x7087b5be8e679e97!2sPriyadharshini%20Motor%20works!5e0!3m2!1sen!2suk!4v1704837052901!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15695.872000783118!2d79.3091683!3d10.424114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0001becd96cb03%3A0x7087b5be8e679e97!2sPriyadharshini%20Motor%20works!5e0!3m2!1sen!2suk!4v1704837052901!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="openinghours" id="openinghours">
                 <p>Monday: 9.00 am- 8.00 pm</p><br>
@@ -195,6 +196,13 @@
                 <p>Friday: 9.00 am- 8.00 pm</p><br>
                 <p>Saturday: 9.00 am- 8.00 pm</p><br>
                 <p>Sunday: Closed</p><br>
+            </div>
+         </div>
+
+         <div class="popup" id="appointmentPopup" >
+            <div class="popup-content">
+                <span class="close" onclick="closepopup()">&times;</span>
+                <iframe class="form-frame"src="https://docs.google.com/forms/d/e/1FAIpQLSc5CJFFNboi5kOhqJvfTy9cyPVk4Iw21XenLuxuB0on8dGudQ/viewform"></iframe>
             </div>
          </div>
     </body>
